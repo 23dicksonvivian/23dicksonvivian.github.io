@@ -1,89 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Your Page Title</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body style="background-color:rgba(119, 94, 74, 0.829);"></body>
-<body>
-
- <h1>George Washington Carver</h1>
- <p>Learn to do common things uncommonly well.</p>
- <small>-George Washington Carver (1864-1943)</small>
-  <h2>History of an Educator, Innovator, Leader</h2>
-    <!-- Do not delete the line below. It provides the test suite for user stories. -->
-    <div class="content">
-      <!DOCTYPE html>
-      <html>
-      <body>
+  
+ <body>
+   
+     <div class= "heading">
+  <div class="container">
+  <h1 id="title">Airline Food Survey</h1>
+    <h2 id="sub-title">Let us take you on a culinary journey to your destination</h2>
+      <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde, numquam asperiores placeat quis ut autem at debitis, fugit quibusdam omnis!</p>
+ 
+    <img class="img" src="https://i.postimg.cc/m2VSWTph/airplane-clipart-transparent-20.png" alt="airplane-flying">
+  </div>
+   </div>
+    
+  <form id="survey-form">
+     <div class="personal-info">
+     <div class="container">
+       <ul class="personal-info__list">
+           <li>
+    <label for="name" id="name-label">Name</label>
+      <input type="text" 
+             class="personal-info__data"
+             id="name" 
+             name="name" 
+             placeholder="Name"
+             required>
+           </li>
+           <li>
+    <label for="email" id="email-label">Email</label>
+      <input type="email" 
+             class="personal-info__data"
+             id="email" 
+             name="email" 
+             placeholder="Email@"
+             required>
+           </li>
+           <li>
+    <label for="number" id="number-label">Age</label>
+      <input type="number" 
+             class="personal-info__data"
+             id="number"
+             name="age"  
+             min="1" max="115" 
+             placeholder="25"
+             required>
+           </li>
+       </ul>    
+  </div>
+      </div>
       
-        <img src="https://historicmissourians.shsmo.org/wp-content/uploads/2020/09/1_027557.jpg">
-      </body>
-      </html>
-      <p class="lede">In the post–Civil War South one man made it his mission to use agricultural chemistry and scientific methodology to improve the lives of impoverished farmers.</p>
-    <p>George Washington Carver (ca. 1864–1943) was born enslaved in Missouri at the time of the Civil War. His exact birth date and year are unknown, and reported dates range between 1860 and 1865. He was orphaned as an infant, and, with the war bringing an end to slavery, he grew up a free child, albeit on the farm of his mother’s former master, Moses Carver. The Carvers raised George and gave him their surname. Early on he developed a keen interest in plants, collecting specimens in the woods on the farm.<br>
-
-      <h2>Education</h2>
-    <p>At age 11, Carver left home to pursue an education in the nearby town of Neosho. He was taken in by an African American couple, Mariah and Andrew Watkins, for whom he did odd jobs while attending school for the first time. Disappointed in the school in Neosho, Carver eventually left for Kansas, where for several years he supported himself through a variety of occupations and added to his education in a piecemeal fashion. He eventually earned a high school diploma in his twenties, but he soon found that opportunities to attend college for young black men in Kansas were nonexistent. So in the late 1880s Carver relocated again, this time to Iowa, where he met the Milhollands, a white couple who encouraged him to enroll in college.</p><div class="media media-element-container media-wysiwyg"><div id="file-11070" class="file file-image file-image-jpeg">
-      <!DOCTYPE html>
-<html>
-<body>
-
-
-
-
-</body>
+  <div class="wrapper"> 
+    <div class="flight-details"> 
+      <div class="container">
+     <h3>Which airport in Canada are you departing from?</h3>
+   <select id="dropdown" name="vancouver-international">
+     <option value="yvr-international"> YVR International Airport</option>
+     <option value="victoria-international"> YYJ Victoria International Airport</option>
+     <option value="calgary-international"> YYC Calgary International Airport</option>
+     <option value="edmonton-international"> YEG Edmonton International Airport</option>
+      <option value="saskatoon-internatinal"> YXE Saskatoon International Airport</option>
+      <option value="regina-international"> YQR Regina International Airport</option>
+      <option value="winnipeg-international"> YWG Winnipeg International Airport</option>
+      <option value="toronto-international"> YYZ Toronto Pearson International Airport</option>
+     <option value="london-international"> YXU London Internationl Airport</option>
+      <option value="ottawa-international"> YOW Ottawa Macdonald–Cartier International Airport</option>
+       <option value="montreal-international"> YUL Montréal–Trudeau International Airport</option>
+      <option value="quebec-international"> YQB Quebec-Jean Lesage International Airport</option>
+     <option value="fredericton-international"> YFC Fredericton International Airport</option>
+     <option value="moncton-international"> YQM Greater Moncton Roméo LeBlanc International Airport</option>
+     <option value="halifax-international"> YHZ Halifax International Airport</option>
+     <option value="charlottetown-airport"> YYG Charlottetown Airport</option>
+     <option value="st-johns-international"> YYT St Johns International Airport</option>
+     <option value="gander-airport"> YQX Gander Airport</option>
+     <option value="yukon-airport"> YXY Erik Nielsen Whitehorse International Airport</option>
+     <option value="yellowknife-airport"> YXU Yellowknife Airport</option>
+     <option value="nunavut-airport"> YFB Iqaluit Airport</option>
+    </select>
+   </div>
+  </div>
+    </div>
+   
+ <div class="wrapper">
+  <div class="flight-details">
+    <div class="container">
+      <h3>Which province or territory are you flying to today</h3>
+     <select id="destintion" name="desination">
+       <optgroup label="Provinces">
+       <option value="bc"> British Columbia</option>
+       <option value="ab"> Alberta</option>
+       <option value="sk"> Saskatchewan</option>
+       <option value="mb"> Manitoba</option>
+       <option value="on"> Ontario</option>
+       <option value="qc"> Quebec</option>
+       <option value="nb"> New Brunswick</option>
+       <option value="ns"> Nova Scotia</option>
+       <option value="pei"> Prince Edward Island</option>
+       <option value="nl"> Newfoundland and Labrador</option>
+         </optgroup>
+       <optgroup label="Territories">
+         <option value="yukon"> Yukon</option>
+         <option value="nwt"> North West Territories</option>
+       <option value="nunavut"> Nunavut</option>
+      </optgroup>
+    </select>
+   </div>
+  </div>
+    
+  
+        <div class="container">
+      <div class="options">
+  <fieldset>
+    <legend>
+      <h3>Which Of Our New Meal Options Most Interests You? (choose one)</h3>
+      </legend>
+    <ul class="food__list"> 
+      <li>
+    <label for="mac-n-cheese">Mac and Cheese (vegetarian)
+      <input type="radio" name="new-options" id="mac-n-cheese" value="mac-n-cheese">
+    </label>
+      </li>
+      <li>
+    <label for="salmon-risotto">Salmon Risotto
+  <input type="radio" name="new-options" id="salmon-risotto" value= "salmon risotto">
+       </label>
+      </li>
+      <li>
+    <label for="rainbow-wrap"> Rainbow vegetable and Hummus Wrap (vegan)
+       <input type="radio" name="new-options" id="rainbow-wrap" value= "rainbow-wrap">
+       </label>
+      </li>
+      <li>
+    <label for="channa-masala"> Channa Masala (vegan)
+       <input type="radio" name="new-options" id= "channa-masala" value="channa-masala">
+       </label>
+      </li>
+      <li>
+    <label for= "irish-stew"> Irish Stew
+       <input type="radio" name="new-options" id="irish-stew" value="irish-stew">
+    </label>
+      </li>
+    </ul>
+  </fieldset>
+     </div> <!--ends options-->
+       </div> <!--ends container-->
+    
+ 
+       
+  <div class="container">
+       <img class="imgfood" src="https://i.postimg.cc/Wp7Wg5g6/IMG-0198-Edit.jpg" alt="vegetable rainbow wraps">
+       </div>
+  
+  <div class="container diet">
+    <h3>Do you have any dietry requirements?</h3>
+    <ul class="preferences">
+      <li>
+    <label for="no-preference"> No preference <input type= "checkbox" id="no-preference" name="preference" value="no-preference"></label>
+      </li>
+    
+      <li>
+    <label for="vegetarian"> Vegetarian
+      <input type= "checkbox" id="vegetarian" name="preference" value="vegetarian"></label>
+      </li>
+    
+      <li>
+     <label for="vegan">Vegan <input type= "checkbox" id="vegan" name="preference" value="vegan"></label>
+      </li>
+    
+      <li>
+     <label for="gluten-free">Gluten Free<input type= "checkbox" id="gluten-free" name="preference" value="gluten-free"></label>
+      </li>
+    
+     <li>
+      <label for="nut-allergy">Nut Allergy<input type= "checkbox" id="nut-allergy" name="preference" value="nut-allergy"></label>
+      </li>
+    </ul>
+  </div>
+      
+    <div class="container">
+      <footer class="comments">
+       <label for="comments">Have a suggestion? We would love to hear your feedback!</label>
+        
+         <textarea id="comments"></textarea>
+        <button type="submit" id="submit" value="submit">Submit</button>
+      </footer>
+     </div>
+    </div>
+   </form>
+  </body>
 </html>
-    </div>
-      </div>
-    
       
-    </div>
-    </div><p></p>
-    <p>Carver briefly attended Simpson College in Indianola, studying music and art. When a teacher there learned of his interest in botany, she encouraged him to transfer to Iowa State Agricultural College (now Iowa State University), dissuading him from his original dream of becoming an artist. Carver earned his bachelor’s degree in agricultural science from Iowa State in 1894 and a master’s in 1896. While there he demonstrated a talent for identifying and treating plant diseases.<br>
-    &nbsp;</p>
-  
-    <h2>Tuskegee</h2>
-    <p>Around this time Booker T. Washington was looking to establish an agricultural department and research facility at his Tuskegee Normal and Industrial Institute in Alabama. Washington, the leading black statesman of the day, and two others had founded the institute in 1881 as a new vocational school for African Americans, and the institute had steadily grown. As Carver was the only African American in the nation with an advanced degree in scientific agriculture, Washington sought him out. Carver joined the faculty of Tuskegee in 1896 and stayed there the rest of his life. He was both a teacher and a prolific researcher, heading up the institute’s Agricultural Experiment Station.</p>
-   
-
-    </div>
-      </div>
-    
-      
-    </div>
-    </div><p></p>
-   
-    </div>
-    <div class="image-credit">
-    </div>
-      </div>
-    
-      
-    </div>
-    </div><p></p>
-    <p>Carver’s primary interest was in using chemistry and scientific methodology to improve the lives of impoverished farmers in southeastern Alabama. To that end he conducted soil studies to determine what crops would grow best in the region and found that the local soil was perfect for growing peanuts and sweet potatoes. He also taught farmers about fertilization and crop rotation as methods for increasing soil productivity. The primary crop in the South was cotton, which severely depleted soil nutrients, but by rotating crops—alternating cotton with soil-enriching crops like legumes and sweet potatoes—farmers could ultimately increase their cotton yield for a plot of land. And crop rotation was cheaper than commercial fertilization. But what to do with all the sweet potatoes and peanuts? At the time, not many people ate them, and there weren’t many other uses for these crops.<br>
-    &nbsp;</p>
-    <h2>New Uses for “Undesirable” Crops</h2>
-    <p>Carver went to work to invent new food, industrial, and commercial products—including flour, sugar, vinegar, cosmetic products, paint, and ink—from these “lowly” plants. From peanuts alone he developed hundreds of new products, thus creating a market for this inexpensive, soil-enriching legume. In 1921 Carver famously spoke before the House Ways and Means Committee on behalf of the nascent peanut industry to secure tariff protection and was thereafter known as the Peanut Man. When he first arrived at Tuskegee in 1896, the peanut was not even a recognized U.S. crop; by 1940 it had become one of the six leading crops in the nation and the second cash crop in the South (after cotton). Both peanuts and sweet potatoes were slowly incorporated into Southern cooking, and today the peanut especially is ubiquitous in the American diet.</p>
-    <p>Carver also developed traveling schools and other outreach programs to educate farmers. He published popular bulletins, distributed to farmers for free, that reported on his research at the Agricultural Experiment Station and its applications.<br>
-    &nbsp;</p>
-      
-     
-   
-      
-    </div>
-      </div>
-    
-      
-    </div>
-    </div><p></p>
-    <h2>Recognition</h2>
-    <p>Through chemistry and conviction Carver revolutionized Southern agriculture and raised the standard of living of his fellow man. In addition to the popular honor of being one of the most recognized names in African American history, Carver received the 1923 Spingarn Medal and was posthumously inducted into the National Inventors Hall of Fame. The George Washington Carver National Monument was the first national monument dedicated to a black American and the first to a nonpresident.</p>
-    
-    
-    
-  
-      </div>
-</body>
